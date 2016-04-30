@@ -11,5 +11,6 @@
 @interface RecordTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *eventNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eventTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *eventDateLabel;
 
 @end
