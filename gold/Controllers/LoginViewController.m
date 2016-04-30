@@ -29,10 +29,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)loginButtonClicked:(id)sender {
     [self loginWithFirebase];
-    
+    [self performSegueWithIdentifier:@"loginSegue" sender:self];
 }
+
 - (IBAction)signupButtonClicked:(id)sender {
     [self signupWithFirebase];
 }
