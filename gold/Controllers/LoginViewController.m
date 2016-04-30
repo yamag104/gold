@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <Firebase/Firebase.h>
 
 @interface LoginViewController ()
 
@@ -27,6 +28,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)signupWithFirebase {
+    Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
+    [ref createUser:@"bobtony@example.com" password:@"correcthorsebatterystaple"
+withValueCompletionBlock:^(NSError *error, NSDictionary *result) {
+    if (error) {
+        // There was an error creating the account
+    } else {
+        NSString *uid = [result objectForKey:@"uid"];
+        NSLog(@"Successfully created user account with uid: %@", uid);
+    }
+}];
 }
 
 /*
