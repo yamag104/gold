@@ -10,6 +10,6 @@
 
 @implementation Constants
 
-NSString *kFirebaseURL = @"https://flickering-torch-3304.firebaseio.com";
+NSString * const kFirebaseURL = @"https://flickering-torch-3304.firebaseio.com";
 
 @end

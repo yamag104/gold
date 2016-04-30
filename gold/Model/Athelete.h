@@ -15,4 +15,6 @@
 @property(assign, nonatomic) NSInteger age;
 @property(strong, nonatomic) NSMutableArray *record;
 
++ (instancetype)sharedInstance;
+
 @end

@@ -6,6 +6,7 @@
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
+#import "Athelete.h"
 #import "LoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
@@ -22,16 +23,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self layoutViews];
-    [self signupWithFirebase];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)loginUser:(id)sender {
+- (IBAction)loginButtonClicked:(id)sender {
+    [self loginWithFirebase];
+    
 }
-- (IBAction)signupUser:(id)sender {
+- (IBAction)signupButtonClicked:(id)sender {
+    [self signupWithFirebase];
 }
 
 - (void)layoutViews {
@@ -42,29 +45,42 @@
 
 - (void)signupWithFirebase {
     Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
-    [ref createUser:@"bobtony@example.com" password:@"correcthorsebatterystaple"
+    NSString *username = self.usernamedField.text;
+    NSString *password = self.passwordField.text;
+    [ref createUser:username password:password
 withValueCompletionBlock:^(NSError *error, NSDictionary *result) {
         if (error) {
-            // There was an error creating the account
+            [self showErrorAlertWithTitle:@"Signup failed"];
         } else {
             NSString *uid = [result objectForKey:@"uid"];
-            NSLog(@"Successfully created user account with uid: %@", uid);
+            NSLog(@"[LoginViewController.m] Successfully created user account with uid: %@", uid);
+            [Athelete sharedInstance].userId = uid;
         }
     }];
 }
 
 - (void)loginWithFirebase {
-    
+    Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
+    NSString *username = self.usernamedField.text;
+    NSString *password = self.passwordField.text;
+    [ref authUser:username password:password
+withCompletionBlock:^(NSError *error, FAuthData *authData) {
+    if (error) {
+        [self showErrorAlertWithTitle:@"Login failed"];
+    } else {
+        // We are now logged in
+        NSLog(@"[LoginViewController.m] Successfully logged in");
+    }
+}];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showErrorAlertWithTitle:(NSString *)title {
+    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:title
+                                                    message:@"There was an error. Please try again later."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil, nil];
+    [alert show];
 }
-*/
 
 @end
