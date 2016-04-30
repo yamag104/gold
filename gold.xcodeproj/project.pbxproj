@@ -22,6 +22,8 @@
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
 		A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */; };
 		A07064BF1CD53BF50022C45C /* UserFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */; };
+		A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C41CD561FB0022C45C /* UserTabBarController.m */; };
+		A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
 		A07064BD1CD53BF50022C45C /* UserFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFeedTableViewController.h; sourceTree = "<group>"; };
 		A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFeedTableViewController.m; sourceTree = "<group>"; };
+		A07064C31CD561FB0022C45C /* UserTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTabBarController.h; sourceTree = "<group>"; };
+		A07064C41CD561FB0022C45C /* UserTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTabBarController.m; sourceTree = "<group>"; };
+		A07064C71CD5694B0022C45C /* CategoryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionCollectionViewController.h; sourceTree = "<group>"; };
+		A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionCollectionViewController.m; sourceTree = "<group>"; };
 		C1B93BC0272D80B75DA37F1B /* libPods-gold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,12 +215,16 @@
 		A07064B11CD4A0CD0022C45C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07064C31CD561FB0022C45C /* UserTabBarController.h */,
+				A07064C41CD561FB0022C45C /* UserTabBarController.m */,
 				A07064B31CD4A17F0022C45C /* StopWatchViewController.h */,
 				A07064B41CD4A17F0022C45C /* StopWatchViewController.m */,
 				77A9E15E1CD4B0BE006578C1 /* LoginViewController.h */,
 				77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */,
 				A07064BD1CD53BF50022C45C /* UserFeedTableViewController.h */,
 				A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */,
+				A07064C71CD5694B0022C45C /* CategoryCollectionCollectionViewController.h */,
+				A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -409,10 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */,
 				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
 				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
 				A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */,
 				A07064BF1CD53BF50022C45C /* UserFeedTableViewController.m in Sources */,
+				A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */,
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
 				77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,

@@ -1,51 +1,36 @@
 //
-//  UserFeedTableViewController.m
+//  EventsTableViewController.m
 //  gold
 //
 //  Created by Brian Wong on 4/30/16.
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
-#import "UserFeedTableViewController.h"
-#import "RecordTableViewCell.h"
+#import "EventsTableViewController.h"
 
-@interface UserFeedTableViewController ()
-
-@property (weak, nonatomic) IBOutlet UIView *feedHeaderView;
-@property (weak, nonatomic) IBOutlet UIImageView *userProfileImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *profileBackgroundView;
+@interface EventsTableViewController ()
 
 @end
 
-@implementation UserFeedTableViewController
+@implementation EventsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    //
-    
-    self.profileBackgroundView.image = [UIImage imageNamed:@"Profile Background@1x"];
-    self.profileBackgroundView.backgroundColor = [UIColor clearColor];
-    
-    self.userProfileImageView.layer.cornerRadius = self.userProfileImageView.frame.size.width/2;
-    self.userProfileImageView.layer.borderWidth = 3.0;
-    self.userProfileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.userProfileImageView.clipsToBounds = YES;
-    
+    //Set title to current event
     
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -53,20 +38,15 @@
     return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    RecordTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recordCell" forIndexPath:indexPath];
-    
-    cell.eventNameLabel.text = @"100m Dash";
-    cell.eventDateLabel.text = @"02/12/14 - 12:30 AM";
-    cell.eventTimeLabel.text = @"0:00.0";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.

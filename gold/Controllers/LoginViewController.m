@@ -31,6 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)loginUser:(id)sender {
+    [self performSegueWithIdentifier:@"loginSegue" sender:self];
 }
 - (IBAction)signupUser:(id)sender {
 }
