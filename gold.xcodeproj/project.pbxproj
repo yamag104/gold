@@ -21,6 +21,8 @@
 		77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1691CD51939006578C1 /* RankSystemManager.m */; };
 		77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E16C1CD522FA006578C1 /* Athelete.m */; };
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
+		A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */; };
+		A07064BF1CD53BF50022C45C /* UserFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.debug.xcconfig"; sourceTree = "<group>"; };
 		A07064B31CD4A17F0022C45C /* StopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
 		A07064B41CD4A17F0022C45C /* StopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
+		A07064BA1CD53BC30022C45C /* RecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableViewCell.h; sourceTree = "<group>"; };
+		A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
+		A07064BD1CD53BF50022C45C /* UserFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFeedTableViewController.h; sourceTree = "<group>"; };
+		A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFeedTableViewController.m; sourceTree = "<group>"; };
 		C1B93BC0272D80B75DA37F1B /* libPods-gold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +201,8 @@
 		A07064B01CD4A0C60022C45C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A07064BA1CD53BC30022C45C /* RecordTableViewCell.h */,
+				A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -206,6 +214,8 @@
 				A07064B41CD4A17F0022C45C /* StopWatchViewController.m */,
 				77A9E15E1CD4B0BE006578C1 /* LoginViewController.h */,
 				77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */,
+				A07064BD1CD53BF50022C45C /* UserFeedTableViewController.h */,
+				A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -403,6 +413,8 @@
 			files = (
 				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
 				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
+				A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */,
+				A07064BF1CD53BF50022C45C /* UserFeedTableViewController.m in Sources */,
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
 				774D981E1CD5315A002B4884 /* Constants.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,
