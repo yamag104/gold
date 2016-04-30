@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01064F6FEB8100B8906946CE /* libPods-gold.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B93BC0272D80B75DA37F1B /* libPods-gold.a */; };
 		77A59B8C1CD49297000FE437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8B1CD49297000FE437 /* main.m */; };
 		77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8E1CD49297000FE437 /* AppDelegate.m */; };
 		77A59B951CD49297000FE437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B931CD49297000FE437 /* Main.storyboard */; };
@@ -15,9 +16,6 @@
 		77A59BA51CD49297000FE437 /* goldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59BA41CD49297000FE437 /* goldTests.m */; };
 		77A59BB01CD49297000FE437 /* goldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59BAF1CD49297000FE437 /* goldUITests.m */; };
 		77A9E1601CD4B0BE006578C1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */; };
-		77A9E1651CD4B156006578C1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9E1621CD4B156006578C1 /* FBSDKCoreKit.framework */; };
-		77A9E1661CD4B156006578C1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9E1631CD4B156006578C1 /* FBSDKLoginKit.framework */; };
-		77A9E1671CD4B156006578C1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9E1641CD4B156006578C1 /* FBSDKShareKit.framework */; };
 		77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1691CD51939006578C1 /* RankSystemManager.m */; };
 		77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E16C1CD522FA006578C1 /* Athelete.m */; };
 		77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */; };
@@ -42,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FF9FBE4B3E623B4318A3399 /* Pods-gold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.release.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.release.xcconfig"; sourceTree = "<group>"; };
 		77A59B871CD49296000FE437 /* gold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A59B8B1CD49297000FE437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77A59B8D1CD49297000FE437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,9 +57,6 @@
 		77A59BB11CD49297000FE437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A9E15E1CD4B0BE006578C1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
 		77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController.m; sourceTree = "<group>"; };
-		77A9E1621CD4B156006578C1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		77A9E1631CD4B156006578C1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		77A9E1641CD4B156006578C1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		77A9E1681CD51939006578C1 /* RankSystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankSystemManager.h; path = Managers/RankSystemManager.h; sourceTree = "<group>"; };
 		77A9E1691CD51939006578C1 /* RankSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankSystemManager.m; path = Managers/RankSystemManager.m; sourceTree = "<group>"; };
 		77A9E16B1CD522FA006578C1 /* Athelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Athelete.h; path = Model/Athelete.h; sourceTree = "<group>"; };
@@ -68,8 +64,10 @@
 		77A9E16E1CD52756006578C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "Supporting Files/PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SportingEventsConstants.h; path = "Supporting Files/SportingEventsConstants.h"; sourceTree = "<group>"; };
 		77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SportingEventsConstants.m; path = "Supporting Files/SportingEventsConstants.m"; sourceTree = "<group>"; };
+		9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.debug.xcconfig"; sourceTree = "<group>"; };
 		A07064B31CD4A17F0022C45C /* StopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
 		A07064B41CD4A17F0022C45C /* StopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
+		C1B93BC0272D80B75DA37F1B /* libPods-gold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77A9E1661CD4B156006578C1 /* FBSDKLoginKit.framework in Frameworks */,
-				77A9E1651CD4B156006578C1 /* FBSDKCoreKit.framework in Frameworks */,
-				77A9E1671CD4B156006578C1 /* FBSDKShareKit.framework in Frameworks */,
+				01064F6FEB8100B8906946CE /* libPods-gold.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +96,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0433CE84F44D2C241531E079 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */,
+				0FF9FBE4B3E623B4318A3399 /* Pods-gold.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F87191AFF34EEA42CB786C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1B93BC0272D80B75DA37F1B /* libPods-gold.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77A59B7E1CD49296000FE437 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,8 @@
 				77A59BA31CD49297000FE437 /* goldTests */,
 				77A59BAE1CD49297000FE437 /* goldUITests */,
 				77A59B881CD49296000FE437 /* Products */,
+				0433CE84F44D2C241531E079 /* Pods */,
+				6F87191AFF34EEA42CB786C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +147,6 @@
 				77A59B961CD49297000FE437 /* Assets.xcassets */,
 				77A59B981CD49297000FE437 /* LaunchScreen.storyboard */,
 				77A59B9B1CD49297000FE437 /* Info.plist */,
-				77A9E1611CD4B12E006578C1 /* Frameworks */,
 				77A59B8A1CD49296000FE437 /* Supporting Files */,
 			);
 			path = gold;
@@ -166,16 +180,6 @@
 				77A59BB11CD49297000FE437 /* Info.plist */,
 			);
 			path = goldUITests;
-			sourceTree = "<group>";
-		};
-		77A9E1611CD4B12E006578C1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				77A9E1621CD4B156006578C1 /* FBSDKCoreKit.framework */,
-				77A9E1631CD4B156006578C1 /* FBSDKLoginKit.framework */,
-				77A9E1641CD4B156006578C1 /* FBSDKShareKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A07064AF1CD4A0B20022C45C /* Model */ = {
@@ -221,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77A59BB41CD49297000FE437 /* Build configuration list for PBXNativeTarget "gold" */;
 			buildPhases = (
+				DA4562CA077D25CA6C5D4BA4 /* Check Pods Manifest.lock */,
 				77A59B831CD49296000FE437 /* Sources */,
 				77A59B841CD49296000FE437 /* Frameworks */,
 				77A59B851CD49296000FE437 /* Resources */,
+				ABAF37604E14552622AC60B6 /* Embed Pods Frameworks */,
+				41254D2855059A1ECF47FB6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +345,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41254D2855059A1ECF47FB6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gold/Pods-gold-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABAF37604E14552622AC60B6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gold/Pods-gold-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4562CA077D25CA6C5D4BA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77A59B831CD49296000FE437 /* Sources */ = {
@@ -491,6 +546,7 @@
 		};
 		77A59BB51CD49297000FE437 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -506,6 +562,7 @@
 		};
 		77A59BB61CD49297000FE437 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF9FBE4B3E623B4318A3399 /* Pods-gold.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
