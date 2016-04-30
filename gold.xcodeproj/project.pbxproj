@@ -15,6 +15,7 @@
 		77A59B9A1CD49297000FE437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B981CD49297000FE437 /* LaunchScreen.storyboard */; };
 		77A59BA51CD49297000FE437 /* goldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59BA41CD49297000FE437 /* goldTests.m */; };
 		77A59BB01CD49297000FE437 /* goldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59BAF1CD49297000FE437 /* goldUITests.m */; };
+		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		77A59BAB1CD49297000FE437 /* goldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A59BAF1CD49297000FE437 /* goldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goldUITests.m; sourceTree = "<group>"; };
 		77A59BB11CD49297000FE437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07064B31CD4A17F0022C45C /* StopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
+		A07064B41CD4A17F0022C45C /* StopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				A07064B11CD4A0CD0022C45C /* Controllers */,
-				A07064B01CD4A0C60022C45C /* Views */,
 				A07064AF1CD4A0B20022C45C /* Model */,
+				A07064B01CD4A0C60022C45C /* Views */,
 				77A59B8D1CD49297000FE437 /* AppDelegate.h */,
 				77A59B8E1CD49297000FE437 /* AppDelegate.m */,
 				77A59B901CD49297000FE437 /* ViewController.h */,
@@ -161,6 +164,8 @@
 		A07064B11CD4A0CD0022C45C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07064B31CD4A17F0022C45C /* StopWatchViewController.h */,
+				A07064B41CD4A17F0022C45C /* StopWatchViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
 				77A59B921CD49297000FE437 /* ViewController.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,
 				77A59B8C1CD49297000FE437 /* main.m in Sources */,
