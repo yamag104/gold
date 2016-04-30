@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01064F6FEB8100B8906946CE /* libPods-gold.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B93BC0272D80B75DA37F1B /* libPods-gold.a */; };
 		774D981E1CD5315A002B4884 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D981D1CD5315A002B4884 /* Constants.m */; };
+		7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */; };
 		77A59B8C1CD49297000FE437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8B1CD49297000FE437 /* main.m */; };
 		77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8E1CD49297000FE437 /* AppDelegate.m */; };
 		77A59B951CD49297000FE437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B931CD49297000FE437 /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		77A9E1601CD4B0BE006578C1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */; };
 		77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1691CD51939006578C1 /* RankSystemManager.m */; };
 		77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E16C1CD522FA006578C1 /* Athelete.m */; };
-		77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */; };
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,6 @@
 		77A9E1691CD51939006578C1 /* RankSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankSystemManager.m; path = Managers/RankSystemManager.m; sourceTree = "<group>"; };
 		77A9E16B1CD522FA006578C1 /* Athelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Athelete.h; path = Model/Athelete.h; sourceTree = "<group>"; };
 		77A9E16C1CD522FA006578C1 /* Athelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Athelete.m; path = Model/Athelete.m; sourceTree = "<group>"; };
-		77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SportingEventsConstants.h; path = "Supporting Files/SportingEventsConstants.h"; sourceTree = "<group>"; };
-		77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SportingEventsConstants.m; path = "Supporting Files/SportingEventsConstants.m"; sourceTree = "<group>"; };
 		9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.debug.xcconfig"; sourceTree = "<group>"; };
 		A07064B31CD4A17F0022C45C /* StopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
 		A07064B41CD4A17F0022C45C /* StopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
@@ -150,6 +148,7 @@
 				77A59B961CD49297000FE437 /* Assets.xcassets */,
 				77A59B981CD49297000FE437 /* LaunchScreen.storyboard */,
 				77A59B9B1CD49297000FE437 /* Info.plist */,
+				774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */,
 				77A59B8A1CD49296000FE437 /* Supporting Files */,
 			);
 			path = gold;
@@ -158,11 +157,8 @@
 		77A59B8A1CD49296000FE437 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */,
 				774D981C1CD5315A002B4884 /* Constants.h */,
 				774D981D1CD5315A002B4884 /* Constants.m */,
-				77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */,
-				77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */,
 				A07064B21CD4A0E20022C45C /* Managers */,
 				77A59B8B1CD49297000FE437 /* main.m */,
 			);
@@ -329,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */,
 				77A59B9A1CD49297000FE437 /* LaunchScreen.storyboard in Resources */,
 				77A59B971CD49297000FE437 /* Assets.xcassets in Resources */,
 				77A59B951CD49297000FE437 /* Main.storyboard in Resources */,
@@ -408,7 +405,6 @@
 				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
 				774D981E1CD5315A002B4884 /* Constants.m in Sources */,
-				77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,
 				77A59B8C1CD49297000FE437 /* main.m in Sources */,
 				77A9E1601CD4B0BE006578C1 /* LoginViewController.m in Sources */,
@@ -559,7 +555,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/gold",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/gold-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/gold/gold-Prefix.pch";
 				INFOPLIST_FILE = gold/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.gold;
@@ -576,7 +573,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/gold",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/gold-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/gold/gold-Prefix.pch";
 				INFOPLIST_FILE = gold/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.gold;

@@ -19,10 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
-    [self.view addSubview:loginButton];
-    // Do any additional setup after loading the view.
+    [self layoutViews];
+    [self signupWithFirebase];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,17 +28,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)layoutViews {
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
+}
+
 - (void)signupWithFirebase {
     Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
     [ref createUser:@"bobtony@example.com" password:@"correcthorsebatterystaple"
 withValueCompletionBlock:^(NSError *error, NSDictionary *result) {
-    if (error) {
-        // There was an error creating the account
-    } else {
-        NSString *uid = [result objectForKey:@"uid"];
-        NSLog(@"Successfully created user account with uid: %@", uid);
-    }
-}];
+        if (error) {
+            // There was an error creating the account
+        } else {
+            NSString *uid = [result objectForKey:@"uid"];
+            NSLog(@"Successfully created user account with uid: %@", uid);
+        }
+    }];
+}
+
+- (void)loginWithFirebase {
+    
 }
 
 /*

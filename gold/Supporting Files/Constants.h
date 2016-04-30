@@ -10,6 +10,6 @@
 
 @interface Constants : NSObject
 
-extern const NSString *kFirebaseURL;
+extern NSString * const kFirebaseURL;
 
 @end
