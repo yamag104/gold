@@ -19,8 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//    LoginViewController *loginVC = [[LoginViewController alloc] init];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     return YES;

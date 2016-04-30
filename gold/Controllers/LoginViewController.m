@@ -11,6 +11,8 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface LoginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *usernamedField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
 @end
 
@@ -27,6 +29,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)loginUser:(id)sender {
+}
+- (IBAction)signupUser:(id)sender {
 }
 
 /*
