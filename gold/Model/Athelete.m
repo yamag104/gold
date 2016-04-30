@@ -1,15 +1,15 @@
 //
-//  ViewController.h
+//  Athelete.m
 //  gold
 //
 //  Created by Yoko Yamaguchi on 4/30/16.
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Athelete.h"
 
-@interface ViewController : UIViewController
+@implementation Athelete
+
 
 
 @end
-

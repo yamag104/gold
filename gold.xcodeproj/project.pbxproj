@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		77A59B8C1CD49297000FE437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8B1CD49297000FE437 /* main.m */; };
 		77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8E1CD49297000FE437 /* AppDelegate.m */; };
-		77A59B921CD49297000FE437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B911CD49297000FE437 /* ViewController.m */; };
 		77A59B951CD49297000FE437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B931CD49297000FE437 /* Main.storyboard */; };
 		77A59B971CD49297000FE437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B961CD49297000FE437 /* Assets.xcassets */; };
 		77A59B9A1CD49297000FE437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B981CD49297000FE437 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,9 @@
 		77A9E1651CD4B156006578C1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9E1621CD4B156006578C1 /* FBSDKCoreKit.framework */; };
 		77A9E1661CD4B156006578C1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9E1631CD4B156006578C1 /* FBSDKLoginKit.framework */; };
 		77A9E1671CD4B156006578C1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9E1641CD4B156006578C1 /* FBSDKShareKit.framework */; };
+		77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1691CD51939006578C1 /* RankSystemManager.m */; };
+		77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E16C1CD522FA006578C1 /* Athelete.m */; };
+		77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */; };
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +46,6 @@
 		77A59B8B1CD49297000FE437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77A59B8D1CD49297000FE437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77A59B8E1CD49297000FE437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77A59B901CD49297000FE437 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77A59B911CD49297000FE437 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77A59B941CD49297000FE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77A59B961CD49297000FE437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A59B991CD49297000FE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +61,13 @@
 		77A9E1621CD4B156006578C1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		77A9E1631CD4B156006578C1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		77A9E1641CD4B156006578C1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		77A9E1681CD51939006578C1 /* RankSystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankSystemManager.h; path = Managers/RankSystemManager.h; sourceTree = "<group>"; };
+		77A9E1691CD51939006578C1 /* RankSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankSystemManager.m; path = Managers/RankSystemManager.m; sourceTree = "<group>"; };
+		77A9E16B1CD522FA006578C1 /* Athelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Athelete.h; path = Model/Athelete.h; sourceTree = "<group>"; };
+		77A9E16C1CD522FA006578C1 /* Athelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Athelete.m; path = Model/Athelete.m; sourceTree = "<group>"; };
+		77A9E16E1CD52756006578C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "Supporting Files/PrefixHeader.pch"; sourceTree = "<group>"; };
+		77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SportingEventsConstants.h; path = "Supporting Files/SportingEventsConstants.h"; sourceTree = "<group>"; };
+		77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SportingEventsConstants.m; path = "Supporting Files/SportingEventsConstants.m"; sourceTree = "<group>"; };
 		A07064B31CD4A17F0022C45C /* StopWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
 		A07064B41CD4A17F0022C45C /* StopWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,8 +128,6 @@
 				A07064B01CD4A0C60022C45C /* Views */,
 				77A59B8D1CD49297000FE437 /* AppDelegate.h */,
 				77A59B8E1CD49297000FE437 /* AppDelegate.m */,
-				77A59B901CD49297000FE437 /* ViewController.h */,
-				77A59B911CD49297000FE437 /* ViewController.m */,
 				77A59B931CD49297000FE437 /* Main.storyboard */,
 				77A59B961CD49297000FE437 /* Assets.xcassets */,
 				77A59B981CD49297000FE437 /* LaunchScreen.storyboard */,
@@ -136,6 +141,9 @@
 		77A59B8A1CD49296000FE437 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77A9E16E1CD52756006578C1 /* PrefixHeader.pch */,
+				77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */,
+				77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */,
 				A07064B21CD4A0E20022C45C /* Managers */,
 				77A59B8B1CD49297000FE437 /* main.m */,
 			);
@@ -173,6 +181,8 @@
 		A07064AF1CD4A0B20022C45C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77A9E16B1CD522FA006578C1 /* Athelete.h */,
+				77A9E16C1CD522FA006578C1 /* Athelete.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 		A07064B21CD4A0E20022C45C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				77A9E1681CD51939006578C1 /* RankSystemManager.h */,
+				77A9E1691CD51939006578C1 /* RankSystemManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -333,7 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
-				77A59B921CD49297000FE437 /* ViewController.m in Sources */,
+				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
+				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
+				77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,
 				77A59B8C1CD49297000FE437 /* main.m in Sources */,
 				77A9E1601CD4B0BE006578C1 /* LoginViewController.m in Sources */,
