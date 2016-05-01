@@ -27,7 +27,7 @@
     self.raisedTabButton.frame = CGRectMake(0, 0, 50, 50);
     self.raisedTabButton.titleLabel.font = [UIFont boldSystemFontOfSize:50.0];
     [self.raisedTabButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.raisedTabButton setTitle:@"+" forState:UIControlStateNormal];
+    [self.raisedTabButton setImage:[UIImage imageNamed:@"Trophy"] forState:UIControlStateNormal];
     [self.raisedTabButton addTarget:self action:@selector(startEventFlow:) forControlEvents:UIControlEventTouchUpInside];
     
     CGFloat heightDifference = self.raisedTabButton.frame.size.height - self.tabBar.frame.size.height;
