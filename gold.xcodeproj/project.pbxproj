@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01064F6FEB8100B8906946CE /* libPods-gold.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B93BC0272D80B75DA37F1B /* libPods-gold.a */; };
+		77257BBD1CD5D10C0014414E /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77257BBC1CD5D10C0014414E /* ChallengeTableViewController.m */; };
+		77257BC01CD5D1C20014414E /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77257BBF1CD5D1C20014414E /* DataSource.m */; };
 		774D981E1CD5315A002B4884 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D981D1CD5315A002B4884 /* Constants.m */; };
 		7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */; };
 		7752C1EA1CD573C500CD7959 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7752C1E91CD573C500CD7959 /* FirebaseManager.m */; };
@@ -29,7 +31,6 @@
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
 		A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */; };
 		A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C41CD561FB0022C45C /* UserTabBarController.m */; };
-		A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */; };
 		A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D41A141CD5B0840091FF7D /* MathManager.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		0FF9FBE4B3E623B4318A3399 /* Pods-gold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.release.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.release.xcconfig"; sourceTree = "<group>"; };
+		77257BBB1CD5D10C0014414E /* ChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChallengeTableViewController.h; path = Controllers/ChallengeTableViewController.h; sourceTree = "<group>"; };
+		77257BBC1CD5D10C0014414E /* ChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChallengeTableViewController.m; path = Controllers/ChallengeTableViewController.m; sourceTree = "<group>"; };
+		77257BBE1CD5D1C20014414E /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSource.h; path = Model/DataSource.h; sourceTree = "<group>"; };
+		77257BBF1CD5D1C20014414E /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataSource.m; path = Model/DataSource.m; sourceTree = "<group>"; };
 		774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gold-Prefix.pch"; sourceTree = "<group>"; };
 		774D981C1CD5315A002B4884 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "Supporting Files/Constants.h"; sourceTree = "<group>"; };
 		774D981D1CD5315A002B4884 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = "Supporting Files/Constants.m"; sourceTree = "<group>"; };
@@ -94,8 +99,6 @@
 		A07064BE1CD53BF50022C45C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		A07064C31CD561FB0022C45C /* UserTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTabBarController.h; sourceTree = "<group>"; };
 		A07064C41CD561FB0022C45C /* UserTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTabBarController.m; sourceTree = "<group>"; };
-		A07064C71CD5694B0022C45C /* CategoryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionCollectionViewController.h; sourceTree = "<group>"; };
-		A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionCollectionViewController.m; sourceTree = "<group>"; };
 		A0D41A131CD5B0840091FF7D /* MathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathManager.h; sourceTree = "<group>"; };
 		A0D41A141CD5B0840091FF7D /* MathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathManager.m; sourceTree = "<group>"; };
 		C1B93BC0272D80B75DA37F1B /* libPods-gold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +223,8 @@
 			children = (
 				77A9E16B1CD522FA006578C1 /* Athelete.h */,
 				77A9E16C1CD522FA006578C1 /* Athelete.m */,
+				77257BBE1CD5D1C20014414E /* DataSource.h */,
+				77257BBF1CD5D1C20014414E /* DataSource.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -252,6 +257,8 @@
 				A07064BE1CD53BF50022C45C /* ProfileViewController.m */,
 				7752C1EB1CD5911C00CD7959 /* CategoryCollectionViewController.h */,
 				7752C1EC1CD5911C00CD7959 /* CategoryCollectionViewController.m */,
+				77257BBB1CD5D10C0014414E /* ChallengeTableViewController.h */,
+				77257BBC1CD5D10C0014414E /* ChallengeTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -451,11 +458,13 @@
 			files = (
 				7752C1EA1CD573C500CD7959 /* FirebaseManager.m in Sources */,
 				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
+				77257BBD1CD5D10C0014414E /* ChallengeTableViewController.m in Sources */,
 				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
 				A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */,
 				A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */,
 				A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */,
 				7752C1ED1CD5911C00CD7959 /* CategoryCollectionViewController.m in Sources */,
+				77257BC01CD5D1C20014414E /* DataSource.m in Sources */,
 				A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */,
 				7752C1F01CD59A9700CD7959 /* CategoryCollectionViewCell.m in Sources */,
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,

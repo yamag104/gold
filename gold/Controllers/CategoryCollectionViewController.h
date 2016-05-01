@@ -11,5 +11,6 @@
 @interface CategoryCollectionViewController : UICollectionViewController
 
 @property(nonatomic, strong) NSMutableArray *categories;
+@property(nonatomic, strong) NSMutableDictionary *dictCategories;
 
 @end

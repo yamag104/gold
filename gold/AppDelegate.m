@@ -25,6 +25,8 @@
         LoginViewController *loginController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"loginController"];
         self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:loginController];
     }
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavigationBarImage"]
+                                       forBarMetrics:UIBarMetricsDefault];
     return YES;
 }
 

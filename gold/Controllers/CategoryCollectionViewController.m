@@ -8,6 +8,7 @@
 
 #import "CategoryCollectionViewController.h"
 #import "CategoryCollectionViewCell.h"
+#import "ChallengeTableViewController.h"
 
 @interface CategoryCollectionViewController ()
 
@@ -22,9 +23,12 @@ static NSString * const kETC = @"ETC";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self getCategories];
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,16 +66,35 @@ static NSString * const kETC = @"ETC";
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ChallengeTableViewController *challengeVC = [sb instantiateViewControllerWithIdentifier:@"challengeVC"];
+    NSString *eventname = [self.categories objectAtIndex:indexPath.item];
+//    challengeVC.event = eventname;
+//    challengeVC.categories = self.dictCategories;
+    [DataSource sharedInstance].currentEvent = eventname;
+    [DataSource sharedInstance].categories = self.dictCategories;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:challengeVC];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
 - (void)getCategories {
     NSString *path = [NSString stringWithFormat:@"%@%@", kFirebaseURL,kComponentCategories];
     Firebase *categoryRef = [[Firebase alloc] initWithUrl:path];
-    self.categories = [[NSMutableArray alloc] initWithCapacity:4];
+    self.categories = [[NSMutableArray alloc] init];
+    [self.categories setValue:@"Test" forKey:@"Test"];
+    self.dictCategories = [[NSMutableDictionary alloc] init];
     [[categoryRef queryOrderedByValue] observeEventType:FEventTypeChildAdded
                                               withBlock:^(FDataSnapshot *snapshot) {
+                                                  NSString *uniqueid = snapshot.ref.key;
                                                   NSDictionary *categ = snapshot.value;
+                                                  NSString *event = categ[@"title"];
                                                 dispatch_async(dispatch_get_main_queue(), ^{
-                                                    [self.categories addObject:categ[@"title"]];
-                                                    NSLog(@"%@", categ[@"title"]);
+                                                    [self.categories addObject:event];
+                                                    [self.dictCategories setObject:uniqueid
+                                                                            forKey:event];
                                                     [self.collectionView reloadData];
                                                 });
                                               }];
