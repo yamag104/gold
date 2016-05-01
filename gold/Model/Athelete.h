@@ -13,7 +13,8 @@
 @property(strong, nonatomic) NSString *userId;
 @property(strong, nonatomic) NSString *name;
 @property(assign, nonatomic) NSInteger age;
-@property(strong, nonatomic) NSMutableArray *record;
+// key: events value:NSArray of records
+@property(strong, nonatomic) NSDictionary *record;
 
 + (instancetype)sharedInstance;
 

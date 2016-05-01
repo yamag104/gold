@@ -10,6 +10,17 @@
 
 @implementation Constants
 
-NSString * const kFirebaseURL = @"https://flickering-torch-3304.firebaseio.com";
+NSString * const kFirebaseURL = @"https://intense-heat-8241.firebaseio.com/";
+NSString * const kUserId = @"uid";
+NSString * const kName = @"name";
+NSString * const kEmail = @"email";
+NSString * const kValue = @"value";
+NSString * const kDateCreated = @"date_created";
+
+#pragma mark - Components
+
+NSString * const kComponentChallenges = @"challenges";
+NSString * const kComponentRecords = @"records";
+NSString * const kComponentUsers = @"users";
 
 @end

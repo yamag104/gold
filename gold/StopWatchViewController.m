@@ -6,7 +6,9 @@
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
+#import "Athelete.h"
 #import "StopWatchViewController.h"
+#import <Firebase/Firebase.h>
 
 @interface StopWatchViewController ()
 
@@ -47,8 +49,7 @@ BOOL running;
     }
 }
 
-- (void)updateTime
-{
+- (void)updateTime {
     if (!running) return;
     
     //Calc time difference
@@ -66,6 +67,23 @@ BOOL running;
     
     //Constantly update time after 0.1 seconds
     [self performSelector:@selector(updateTime) withObject:self afterDelay:0.1];
+}
+
+- (void)saveRecord {
+    Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
+    NSString *path = [NSString stringWithFormat:@"%@/%@/%@",
+                      kComponentUsers, [Athelete sharedInstance].userId, kComponentRecords];
+    Firebase *recordsRef = [ref childByAppendingPath:path];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
+    NSString *dateString = [formatter stringFromDate:[NSDate date]];
+    
+    NSDictionary *record = @{
+        kDateCreated: dateString,
+        kValue: @"1:00:00"
+        };
+    [recordsRef setValue:record];
 }
 
 /*

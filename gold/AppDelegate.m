@@ -18,11 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    LoginViewController *loginVC = [[LoginViewController alloc] init];
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    // initialize Facebook API
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
+    if (![FBSDKAccessToken currentAccessToken] && ![Athelete sharedInstance].userId) {
+        LoginViewController *loginController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"loginController"];
+        self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:loginController];
+    }
     return YES;
 }
 

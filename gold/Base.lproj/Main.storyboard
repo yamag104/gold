@@ -192,7 +192,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -241,10 +241,10 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWR-8v-ed6">
-                                <rect key="frame" x="188" y="169" width="224" height="30"/>
+                                <rect key="frame" x="85" y="169" width="500" height="30"/>
                                 <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="m9M-WF-lnN"/>
+                                    <constraint firstAttribute="width" constant="500" id="m9M-WF-lnN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -265,7 +265,7 @@
                             <constraint firstItem="Y2R-bw-WDm" firstAttribute="top" secondItem="ihY-im-Fbo" secondAttribute="bottom" constant="26" id="gN8-6H-L8O"/>
                             <constraint firstItem="ihY-im-Fbo" firstAttribute="trailing" secondItem="Y2R-bw-WDm" secondAttribute="trailing" id="gun-3u-tdu"/>
                             <constraint firstItem="PWR-8v-ed6" firstAttribute="top" secondItem="ihY-im-Fbo" secondAttribute="bottom" constant="19" id="j7h-jT-xfu"/>
-                            <constraint firstItem="PWR-8v-ed6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nlp-bA-mfk"/>
+                            <constraint firstItem="PWR-8v-ed6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="35" id="nlp-bA-mfk"/>
                             <constraint firstItem="ihY-im-Fbo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="rrt-Rq-4U8"/>
                             <constraint firstItem="Y2R-bw-WDm" firstAttribute="top" secondItem="PWR-8v-ed6" secondAttribute="bottom" constant="23" id="tIM-4i-IXV"/>
                         </constraints>
@@ -279,6 +279,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JcL-da-gDa"/>
                     <connections>
+                        <outlet property="emailField" destination="PWR-8v-ed6" id="aEt-sg-Ofn"/>
                         <outlet property="passwordField" destination="Y2R-bw-WDm" id="Zdt-4a-SlC"/>
                         <outlet property="usernamedField" destination="ihY-im-Fbo" id="Xdb-4Z-K9R"/>
                         <segue destination="AEu-Iw-7Fb" kind="show" identifier="loginSegue" id="H4c-Jq-QBG"/>
