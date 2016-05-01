@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserFeedTableViewController : UITableViewController
+@interface ProfileViewController : UITableViewController
 
 @end
