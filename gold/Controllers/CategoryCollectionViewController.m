@@ -103,7 +103,7 @@ static NSString * const reuseIdentifier = @"categoryCell";
 - (void)getCategories {
     NSString *path = [NSString stringWithFormat:@"%@%@", kFirebaseURL,kComponentCategories];
     Firebase *categoryRef = [[Firebase alloc] initWithUrl:path];
-    self.categories = [[NSMutableArray alloc] init];
+    self.categories = [NSMutableArray arrayWithObjects:@"Swimming", @"Cycling", nil];
     [[categoryRef queryOrderedByValue] observeEventType:FEventTypeChildAdded
                                               withBlock:^(FDataSnapshot *snapshot) {
                                                   NSDictionary *categ = snapshot.value;
