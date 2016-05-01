@@ -4,8 +4,12 @@
 <dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Gets user&apos;s location</string>
-	<key> NSLocationWhenInUseUsageDescription</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Gets user&apos;s location</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -47,25 +51,25 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb281347898863299</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>281347898863299</string>
-    <key>FacebookDisplayName</key>
-    <string>Gold</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbapi</string>
-        <string>fb-messenger-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb281347898863299</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>281347898863299</string>
+	<key>FacebookDisplayName</key>
+	<string>Gold</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 </dict>
 </plist>

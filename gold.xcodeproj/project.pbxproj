@@ -29,6 +29,7 @@
 		A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C41CD561FB0022C45C /* UserTabBarController.m */; };
 		A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */; };
 		A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D41A141CD5B0840091FF7D /* MathManager.m */; };
+		A0D41A181CD5B5420091FF7D /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D41A171CD5B5420091FF7D /* LocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionCollectionViewController.m; sourceTree = "<group>"; };
 		A0D41A131CD5B0840091FF7D /* MathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathManager.h; sourceTree = "<group>"; };
 		A0D41A141CD5B0840091FF7D /* MathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathManager.m; sourceTree = "<group>"; };
+		A0D41A161CD5B5420091FF7D /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		A0D41A171CD5B5420091FF7D /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		C1B93BC0272D80B75DA37F1B /* libPods-gold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -251,6 +254,8 @@
 			children = (
 				77A9E1681CD51939006578C1 /* RankSystemManager.h */,
 				77A9E1691CD51939006578C1 /* RankSystemManager.m */,
+				A0D41A161CD5B5420091FF7D /* LocationManager.h */,
+				A0D41A171CD5B5420091FF7D /* LocationManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */,
 				A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */,
 				A07064BF1CD53BF50022C45C /* ProfileViewController.m in Sources */,
+				A0D41A181CD5B5420091FF7D /* LocationManager.m in Sources */,
 				A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */,
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
 				77A9E1711CD527EF006578C1 /* (null) in Sources */,

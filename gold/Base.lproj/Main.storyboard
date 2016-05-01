@@ -36,7 +36,7 @@
                                     <action selector="toggleTimer:" destination="P57-NP-FOJ" eventType="touchUpInside" id="g64-yP-b3k"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fH-EP-YcH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fH-EP-YcH">
                                 <rect key="frame" x="0.0" y="262" width="600" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="126" id="OVI-ih-foB"/>

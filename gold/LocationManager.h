@@ -7,18 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 
 @interface LocationManager : NSObject
 
-//Make location public
++ (instancetype)sharedLocationInstance;
 
-+ (instancetype)sharedInstance;
-
--(void)updateCurrentLocation;
-
-@property (nonatomic, strong)NSString *currentCity;
-@property (nonatomic, strong)NSString *currentState;
-
+- (double)updateDistance;
+- (void)stopTrackingDistance;
+- (void)startTrackingDistance;
 
 @end

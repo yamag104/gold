@@ -7,6 +7,7 @@
 //
 
 #import "StopWatchViewController.h"
+#import "LocationManager.h"
 
 @interface StopWatchViewController ()
 
@@ -43,13 +44,21 @@ BOOL running;
         [self updateTime];
     }else{
         running = NO;
+        self.timeLabel.text = @"0:00.0";
+        self.distanceLabel.text = @"0.0m";
         [sender setTitle:@"Start" forState:UIControlStateNormal];
+        [self updateTime];
     }
 }
 
 - (void)updateTime
 {
-    if (!running) return;
+    LocationManager *locationInstance = [LocationManager sharedLocationInstance];
+    
+    if (!running){
+        [locationInstance stopTrackingDistance];
+        return;
+    }
     
     //Calc time difference
     NSTimeInterval currentTime = [NSDate timeIntervalSinceReferenceDate];
@@ -66,6 +75,11 @@ BOOL running;
     
     //Constantly update time after 0.1 seconds
     [self performSelector:@selector(updateTime) withObject:self afterDelay:0.1];
+    
+    //Get distance
+    [locationInstance startTrackingDistance];
+    double distance = [locationInstance updateDistance];
+    self.distanceLabel.text = [NSString stringWithFormat:@"%.2fm", distance];
 }
 
 /*
