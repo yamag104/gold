@@ -10,6 +10,13 @@
 
 @implementation Athelete
 
-
++ (instancetype)sharedInstance {
+    static Athelete *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[Athelete alloc] init];
+    });
+    return sharedInstance;
+}
 
 @end

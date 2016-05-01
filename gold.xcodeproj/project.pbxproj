@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01064F6FEB8100B8906946CE /* libPods-gold.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B93BC0272D80B75DA37F1B /* libPods-gold.a */; };
+		774D981E1CD5315A002B4884 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D981D1CD5315A002B4884 /* Constants.m */; };
+		7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */; };
 		77A59B8C1CD49297000FE437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8B1CD49297000FE437 /* main.m */; };
 		77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A59B8E1CD49297000FE437 /* AppDelegate.m */; };
 		77A59B951CD49297000FE437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A59B931CD49297000FE437 /* Main.storyboard */; };
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		0FF9FBE4B3E623B4318A3399 /* Pods-gold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.release.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.release.xcconfig"; sourceTree = "<group>"; };
+		774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gold-Prefix.pch"; sourceTree = "<group>"; };
+		774D981C1CD5315A002B4884 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "Supporting Files/Constants.h"; sourceTree = "<group>"; };
+		774D981D1CD5315A002B4884 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = "Supporting Files/Constants.m"; sourceTree = "<group>"; };
 		77A59B871CD49296000FE437 /* gold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A59B8B1CD49297000FE437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77A59B8D1CD49297000FE437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,9 +72,6 @@
 		77A9E1691CD51939006578C1 /* RankSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankSystemManager.m; path = Managers/RankSystemManager.m; sourceTree = "<group>"; };
 		77A9E16B1CD522FA006578C1 /* Athelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Athelete.h; path = Model/Athelete.h; sourceTree = "<group>"; };
 		77A9E16C1CD522FA006578C1 /* Athelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Athelete.m; path = Model/Athelete.m; sourceTree = "<group>"; };
-		77A9E16E1CD52756006578C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "Supporting Files/PrefixHeader.pch"; sourceTree = "<group>"; };
-		77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SportingEventsConstants.h; path = "Supporting Files/SportingEventsConstants.h"; sourceTree = "<group>"; };
-		77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SportingEventsConstants.m; path = "Supporting Files/SportingEventsConstants.m"; sourceTree = "<group>"; };
 		9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.debug.xcconfig"; sourceTree = "<group>"; };
 		A046ED3D1CD574B000B509F6 /* ActivityFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityFeedTableViewController.h; sourceTree = "<group>"; };
 		A046ED3E1CD574B000B509F6 /* ActivityFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityFeedTableViewController.m; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				77A59B961CD49297000FE437 /* Assets.xcassets */,
 				77A59B981CD49297000FE437 /* LaunchScreen.storyboard */,
 				77A59B9B1CD49297000FE437 /* Info.plist */,
+				774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */,
 				77A59B8A1CD49296000FE437 /* Supporting Files */,
 			);
 			path = gold;
@@ -173,9 +176,8 @@
 		77A59B8A1CD49296000FE437 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				77A9E16E1CD52756006578C1 /* PrefixHeader.pch */,
-				77A9E16F1CD527EF006578C1 /* SportingEventsConstants.h */,
-				77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */,
+				774D981C1CD5315A002B4884 /* Constants.h */,
+				774D981D1CD5315A002B4884 /* Constants.m */,
 				A07064B21CD4A0E20022C45C /* Managers */,
 				77A59B8B1CD49297000FE437 /* main.m */,
 			);
@@ -354,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */,
 				77A59B9A1CD49297000FE437 /* LaunchScreen.storyboard in Resources */,
 				77A59B971CD49297000FE437 /* Assets.xcassets in Resources */,
 				77A59B951CD49297000FE437 /* Main.storyboard in Resources */,
@@ -439,6 +442,7 @@
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
 				77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */,
 				A046ED3F1CD574B000B509F6 /* ActivityFeedTableViewController.m in Sources */,
+				774D981E1CD5315A002B4884 /* Constants.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,
 				77A59B8C1CD49297000FE437 /* main.m in Sources */,
 				77A9E1601CD4B0BE006578C1 /* LoginViewController.m in Sources */,
@@ -589,6 +593,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/gold",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/gold/gold-Prefix.pch";
 				INFOPLIST_FILE = gold/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -606,6 +612,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/gold",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/gold/gold-Prefix.pch";
 				INFOPLIST_FILE = gold/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

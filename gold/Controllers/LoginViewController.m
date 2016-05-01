@@ -6,9 +6,11 @@
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
+#import "Athelete.h"
 #import "LoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <Firebase/Firebase.h>
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernamedField;
@@ -20,30 +22,67 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
-    [self.view addSubview:loginButton];
-    // Do any additional setup after loading the view.
+    [self layoutViews];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)loginUser:(id)sender {
+
+- (IBAction)loginButtonClicked:(id)sender {
+    [self loginWithFirebase];
     [self performSegueWithIdentifier:@"loginSegue" sender:self];
 }
-- (IBAction)signupUser:(id)sender {
+
+- (IBAction)signupButtonClicked:(id)sender {
+    [self signupWithFirebase];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)layoutViews {
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
 }
-*/
+
+- (void)signupWithFirebase {
+    Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
+    NSString *username = self.usernamedField.text;
+    NSString *password = self.passwordField.text;
+    [ref createUser:username password:password
+withValueCompletionBlock:^(NSError *error, NSDictionary *result) {
+        if (error) {
+            [self showErrorAlertWithTitle:@"Signup failed"];
+        } else {
+            NSString *uid = [result objectForKey:@"uid"];
+            NSLog(@"[LoginViewController.m] Successfully created user account with uid: %@", uid);
+            [Athelete sharedInstance].userId = uid;
+        }
+    }];
+}
+
+- (void)loginWithFirebase {
+    Firebase *ref = [[Firebase alloc] initWithUrl:kFirebaseURL];
+    NSString *username = self.usernamedField.text;
+    NSString *password = self.passwordField.text;
+    [ref authUser:username password:password
+withCompletionBlock:^(NSError *error, FAuthData *authData) {
+    if (error) {
+        [self showErrorAlertWithTitle:@"Login failed"];
+    } else {
+        // We are now logged in
+        NSLog(@"[LoginViewController.m] Successfully logged in");
+    }
+}];
+}
+
+- (void)showErrorAlertWithTitle:(NSString *)title {
+    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:title
+                                                    message:@"There was an error. Please try again later."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil, nil];
+    [alert show];
+}
 
 @end
