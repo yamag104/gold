@@ -52,6 +52,8 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     StopWatchViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"stopwatchVC"];
     vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    NSArray *curItem = self.challenges[indexPath.item];
+    [DataSource sharedInstance].eventName = curItem[0];
     [self presentViewController:vc animated:YES completion:NULL];
 }
 

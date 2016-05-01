@@ -12,6 +12,7 @@
 
 @property(nonatomic, strong) NSMutableDictionary *categories;
 @property(nonatomic, strong) NSString *currentEvent;
+@property(nonatomic, strong) NSString *eventName;
 
 + (instancetype)sharedInstance;
 

@@ -13,6 +13,8 @@
 @interface StopWatchViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *timerButton;
+@property (weak, nonatomic) IBOutlet UILabel *recordLabel;
+@property (weak, nonatomic) IBOutlet UILabel *eventLabel;
 
 @property (nonatomic, assign) NSTimeInterval startTime;
 
@@ -25,11 +27,15 @@ BOOL running;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.timeLabel.text = @"0:00.0";
+    self.recordLabel.text = @"9.34";
+    self.recordLabel.layer.cornerRadius = 0.3;
     running = NO;
+    if ([DataSource sharedInstance].eventName) {
+        self.eventLabel.text = [DataSource sharedInstance].eventName;
+    }
     
     [self.timerButton sizeToFit];
     [self.timerButton setTitle:@"Start" forState:UIControlStateNormal];
-
 }
 
 - (void)didReceiveMemoryWarning {

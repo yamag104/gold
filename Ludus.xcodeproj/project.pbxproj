@@ -27,6 +27,7 @@
 		77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1691CD51939006578C1 /* RankSystemManager.m */; };
 		77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E16C1CD522FA006578C1 /* Athelete.m */; };
 		77A9E1711CD527EF006578C1 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		77C76E181CD5F4B7004CB0DC /* SF-UI in Resources */ = {isa = PBXBuildFile; fileRef = 77C76E171CD5F4B7004CB0DC /* SF-UI */; };
 		A046ED3F1CD574B000B509F6 /* ActivityFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A046ED3E1CD574B000B509F6 /* ActivityFeedTableViewController.m */; };
 		A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A046ED411CD5764500B509F6 /* FeedTableViewCell.m */; };
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
@@ -67,7 +68,7 @@
 		7752C1EC1CD5911C00CD7959 /* CategoryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryCollectionViewController.m; path = Controllers/CategoryCollectionViewController.m; sourceTree = "<group>"; };
 		7752C1EE1CD59A9700CD7959 /* CategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryCollectionViewCell.h; path = Views/CategoryCollectionViewCell.h; sourceTree = "<group>"; };
 		7752C1EF1CD59A9700CD7959 /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryCollectionViewCell.m; path = Views/CategoryCollectionViewCell.m; sourceTree = "<group>"; };
-		77A59B871CD49296000FE437 /* gold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A59B871CD49296000FE437 /* Ludus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ludus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A59B8B1CD49297000FE437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77A59B8D1CD49297000FE437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77A59B8E1CD49297000FE437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,10 +76,10 @@
 		77A59B961CD49297000FE437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A59B991CD49297000FE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77A59B9B1CD49297000FE437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77A59BA01CD49297000FE437 /* goldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A59BA01CD49297000FE437 /* Ludus.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ludus.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A59BA41CD49297000FE437 /* goldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goldTests.m; sourceTree = "<group>"; };
 		77A59BA61CD49297000FE437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77A59BAB1CD49297000FE437 /* goldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A59BAB1CD49297000FE437 /* Ludus.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ludus.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A59BAF1CD49297000FE437 /* goldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goldUITests.m; sourceTree = "<group>"; };
 		77A59BB11CD49297000FE437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A9E15E1CD4B0BE006578C1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		77A9E1691CD51939006578C1 /* RankSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankSystemManager.m; path = Managers/RankSystemManager.m; sourceTree = "<group>"; };
 		77A9E16B1CD522FA006578C1 /* Athelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Athelete.h; path = Model/Athelete.h; sourceTree = "<group>"; };
 		77A9E16C1CD522FA006578C1 /* Athelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Athelete.m; path = Model/Athelete.m; sourceTree = "<group>"; };
+		77C76E171CD5F4B7004CB0DC /* SF-UI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-UI"; sourceTree = "<group>"; };
 		9331C8405173ED60DA537E07 /* Pods-gold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gold/Pods-gold.debug.xcconfig"; sourceTree = "<group>"; };
 		A046ED3D1CD574B000B509F6 /* ActivityFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityFeedTableViewController.h; sourceTree = "<group>"; };
 		A046ED3E1CD574B000B509F6 /* ActivityFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityFeedTableViewController.m; sourceTree = "<group>"; };
@@ -163,9 +165,9 @@
 		77A59B881CD49296000FE437 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77A59B871CD49296000FE437 /* gold.app */,
-				77A59BA01CD49297000FE437 /* goldTests.xctest */,
-				77A59BAB1CD49297000FE437 /* goldUITests.xctest */,
+				77A59B871CD49296000FE437 /* Ludus.app */,
+				77A59BA01CD49297000FE437 /* Ludus.xctest */,
+				77A59BAB1CD49297000FE437 /* Ludus.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +185,7 @@
 				77A59B981CD49297000FE437 /* LaunchScreen.storyboard */,
 				77A59B9B1CD49297000FE437 /* Info.plist */,
 				774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */,
+				77C76E161CD5F453004CB0DC /* Resources */,
 				77A59B8A1CD49296000FE437 /* Supporting Files */,
 			);
 			path = gold;
@@ -217,6 +220,14 @@
 				77A59BB11CD49297000FE437 /* Info.plist */,
 			);
 			path = goldUITests;
+			sourceTree = "<group>";
+		};
+		77C76E161CD5F453004CB0DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77C76E171CD5F4B7004CB0DC /* SF-UI */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		A07064AF1CD4A0B20022C45C /* Model */ = {
@@ -278,9 +289,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77A59B861CD49296000FE437 /* gold */ = {
+		77A59B861CD49296000FE437 /* Ludus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77A59BB41CD49297000FE437 /* Build configuration list for PBXNativeTarget "gold" */;
+			buildConfigurationList = 77A59BB41CD49297000FE437 /* Build configuration list for PBXNativeTarget "Ludus" */;
 			buildPhases = (
 				DA4562CA077D25CA6C5D4BA4 /* Check Pods Manifest.lock */,
 				77A59B831CD49296000FE437 /* Sources */,
@@ -293,14 +304,14 @@
 			);
 			dependencies = (
 			);
-			name = gold;
+			name = Ludus;
 			productName = gold;
-			productReference = 77A59B871CD49296000FE437 /* gold.app */;
+			productReference = 77A59B871CD49296000FE437 /* Ludus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		77A59B9F1CD49297000FE437 /* goldTests */ = {
+		77A59B9F1CD49297000FE437 /* LudusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77A59BB71CD49297000FE437 /* Build configuration list for PBXNativeTarget "goldTests" */;
+			buildConfigurationList = 77A59BB71CD49297000FE437 /* Build configuration list for PBXNativeTarget "LudusTests" */;
 			buildPhases = (
 				77A59B9C1CD49297000FE437 /* Sources */,
 				77A59B9D1CD49297000FE437 /* Frameworks */,
@@ -311,14 +322,14 @@
 			dependencies = (
 				77A59BA21CD49297000FE437 /* PBXTargetDependency */,
 			);
-			name = goldTests;
+			name = LudusTests;
 			productName = goldTests;
-			productReference = 77A59BA01CD49297000FE437 /* goldTests.xctest */;
+			productReference = 77A59BA01CD49297000FE437 /* Ludus.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		77A59BAA1CD49297000FE437 /* goldUITests */ = {
+		77A59BAA1CD49297000FE437 /* LudusUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77A59BBA1CD49297000FE437 /* Build configuration list for PBXNativeTarget "goldUITests" */;
+			buildConfigurationList = 77A59BBA1CD49297000FE437 /* Build configuration list for PBXNativeTarget "LudusUITests" */;
 			buildPhases = (
 				77A59BA71CD49297000FE437 /* Sources */,
 				77A59BA81CD49297000FE437 /* Frameworks */,
@@ -329,9 +340,9 @@
 			dependencies = (
 				77A59BAD1CD49297000FE437 /* PBXTargetDependency */,
 			);
-			name = goldUITests;
+			name = LudusUITests;
 			productName = goldUITests;
-			productReference = 77A59BAB1CD49297000FE437 /* goldUITests.xctest */;
+			productReference = 77A59BAB1CD49297000FE437 /* Ludus.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -356,7 +367,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 77A59B821CD49296000FE437 /* Build configuration list for PBXProject "gold" */;
+			buildConfigurationList = 77A59B821CD49296000FE437 /* Build configuration list for PBXProject "Ludus" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -369,9 +380,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77A59B861CD49296000FE437 /* gold */,
-				77A59B9F1CD49297000FE437 /* goldTests */,
-				77A59BAA1CD49297000FE437 /* goldUITests */,
+				77A59B861CD49296000FE437 /* Ludus */,
+				77A59B9F1CD49297000FE437 /* LudusTests */,
+				77A59BAA1CD49297000FE437 /* LudusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -384,6 +395,7 @@
 				7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */,
 				77A59B9A1CD49297000FE437 /* LaunchScreen.storyboard in Resources */,
 				77A59B971CD49297000FE437 /* Assets.xcassets in Resources */,
+				77C76E181CD5F4B7004CB0DC /* SF-UI in Resources */,
 				77A59B951CD49297000FE437 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,12 +512,12 @@
 /* Begin PBXTargetDependency section */
 		77A59BA21CD49297000FE437 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 77A59B861CD49296000FE437 /* gold */;
+			target = 77A59B861CD49296000FE437 /* Ludus */;
 			targetProxy = 77A59BA11CD49297000FE437 /* PBXContainerItemProxy */;
 		};
 		77A59BAD1CD49297000FE437 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 77A59B861CD49296000FE437 /* gold */;
+			target = 77A59B861CD49296000FE437 /* Ludus */;
 			targetProxy = 77A59BAC1CD49297000FE437 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -629,7 +641,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.gold;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ludus;
 			};
 			name = Debug;
 		};
@@ -648,7 +660,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.gold;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ludus;
 			};
 			name = Release;
 		};
@@ -659,8 +671,8 @@
 				INFOPLIST_FILE = goldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.goldTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gold.app/gold";
+				PRODUCT_NAME = Ludus;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ludus.app/Ludus";
 			};
 			name = Debug;
 		};
@@ -671,8 +683,8 @@
 				INFOPLIST_FILE = goldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.goldTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gold.app/gold";
+				PRODUCT_NAME = Ludus;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ludus.app/Ludus";
 			};
 			name = Release;
 		};
@@ -682,7 +694,7 @@
 				INFOPLIST_FILE = goldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.goldUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ludus;
 				TEST_TARGET_NAME = gold;
 			};
 			name = Debug;
@@ -693,7 +705,7 @@
 				INFOPLIST_FILE = goldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lahacks2016.goldUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ludus;
 				TEST_TARGET_NAME = gold;
 			};
 			name = Release;
@@ -701,7 +713,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		77A59B821CD49296000FE437 /* Build configuration list for PBXProject "gold" */ = {
+		77A59B821CD49296000FE437 /* Build configuration list for PBXProject "Ludus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77A59BB21CD49297000FE437 /* Debug */,
@@ -710,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77A59BB41CD49297000FE437 /* Build configuration list for PBXNativeTarget "gold" */ = {
+		77A59BB41CD49297000FE437 /* Build configuration list for PBXNativeTarget "Ludus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77A59BB51CD49297000FE437 /* Debug */,
@@ -719,7 +731,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77A59BB71CD49297000FE437 /* Build configuration list for PBXNativeTarget "goldTests" */ = {
+		77A59BB71CD49297000FE437 /* Build configuration list for PBXNativeTarget "LudusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77A59BB81CD49297000FE437 /* Debug */,
@@ -728,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77A59BBA1CD49297000FE437 /* Build configuration list for PBXNativeTarget "goldUITests" */ = {
+		77A59BBA1CD49297000FE437 /* Build configuration list for PBXNativeTarget "LudusUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77A59BBB1CD49297000FE437 /* Debug */,
