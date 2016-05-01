@@ -57,8 +57,6 @@ static NSString * const kETC = @"ETC";
     } else {
         cell.imageView.image = [UIImage imageNamed:eventname];
     }
-    cell.imageView.layer.cornerRadius = 5.0;
-    cell.imageView.layer.masksToBounds = YES;
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     return cell;
