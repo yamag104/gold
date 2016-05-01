@@ -373,7 +373,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="228"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fgg-GM-nil" id="NgB-Qg-FCA">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="227.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="227"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFQ-yV-aal">
@@ -467,10 +467,10 @@
             </objects>
             <point key="canvasLocation" x="222" y="1260"/>
         </scene>
-        <!--Item-->
+        <!--CategoryCollectionViewController Scene-->
         <scene sceneID="t61-Eb-JqZ">
             <objects>
-                <collectionViewController id="ZEJ-GY-8HG" sceneMemberID="viewController">
+                <collectionViewController id="ZEJ-GY-8HG" userLabel="CategoryCollectionViewController Scene" customClass="CategoryCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Dz0-ya-Vxb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -481,7 +481,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="7Bf-f2-ZC6">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="7Bf-f2-ZC6" customClass="CategoryCollectionViewCell">
                                 <rect key="frame" x="0.0" y="64" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -500,6 +500,9 @@
                                     <constraint firstAttribute="bottom" secondItem="8Qt-oD-ZpJ" secondAttribute="bottom" id="k7h-DU-sbK"/>
                                     <constraint firstAttribute="trailing" secondItem="8Qt-oD-ZpJ" secondAttribute="trailing" id="wO7-Vg-Xnn"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="8Qt-oD-ZpJ" id="FsB-K3-C4L"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

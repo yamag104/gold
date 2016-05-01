@@ -22,5 +22,6 @@ extern NSString * const kValue;
 extern NSString * const kComponentChallenges;
 extern NSString * const kComponentRecords;
 extern NSString * const kComponentUsers;
+extern NSString * const kComponentCategories;
 
 @end

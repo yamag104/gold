@@ -1,23 +1,25 @@
 //
-//  CategoryCollectionCollectionViewController.m
+//  CategoryCollectionViewController.m
 //  gold
 //
-//  Created by Brian Wong on 4/30/16.
+//  Created by Yoko Yamaguchi on 4/30/16.
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
-#import "CategoryCollectionCollectionViewController.h"
+#import "CategoryCollectionViewController.h"
+#import "CategoryCollectionViewCell.h"
 
-@interface CategoryCollectionCollectionViewController ()
+@interface CategoryCollectionViewController ()
 
 @end
 
-@implementation CategoryCollectionCollectionViewController
+@implementation CategoryCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"categoryCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self getCategories];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,20 +48,23 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return [self.categories count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
+    CategoryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    NSString *eventname = [self.categories objectAtIndex:indexPath.section];
+    cell.imageView.image=[UIImage imageNamed:eventname];
+    cell.imageView.layer.cornerRadius = 5.0;
+    cell.imageView.layer.masksToBounds = YES;
+    cell.imageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    cell.imageView.layer.borderWidth = 1.0;
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     return cell;
 }
@@ -94,5 +99,17 @@ static NSString * const reuseIdentifier = @"Cell";
 	
 }
 */
+
+- (void)getCategories {
+    NSString *path = [NSString stringWithFormat:@"%@%@", kFirebaseURL,kComponentCategories];
+    Firebase *categoryRef = [[Firebase alloc] initWithUrl:path];
+    self.categories = [[NSMutableArray alloc] init];
+    [[categoryRef queryOrderedByValue] observeEventType:FEventTypeChildAdded
+                                              withBlock:^(FDataSnapshot *snapshot) {
+                                                  NSDictionary *categ = snapshot.value;
+                                                  [self.categories addObject:categ[@"title"]];
+                                                  NSLog(@"%@", categ[@"title"]);
+                                              }];
+}
 
 @end

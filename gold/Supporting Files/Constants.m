@@ -22,5 +22,6 @@ NSString * const kDateCreated = @"date_created";
 NSString * const kComponentChallenges = @"challenges";
 NSString * const kComponentRecords = @"records";
 NSString * const kComponentUsers = @"users";
+NSString * const kComponentCategories = @"categories";
 
 @end
