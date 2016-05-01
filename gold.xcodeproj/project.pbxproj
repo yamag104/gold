@@ -20,7 +20,7 @@
 		77A9E1601CD4B0BE006578C1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */; };
 		77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1691CD51939006578C1 /* RankSystemManager.m */; };
 		77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E16C1CD522FA006578C1 /* Athelete.m */; };
-		77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E1701CD527EF006578C1 /* SportingEventsConstants.m */; };
+		77A9E1711CD527EF006578C1 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A046ED3F1CD574B000B509F6 /* ActivityFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A046ED3E1CD574B000B509F6 /* ActivityFeedTableViewController.m */; };
 		A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A046ED411CD5764500B509F6 /* FeedTableViewCell.m */; };
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
@@ -28,6 +28,7 @@
 		A07064BF1CD53BF50022C45C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BE1CD53BF50022C45C /* ProfileViewController.m */; };
 		A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C41CD561FB0022C45C /* UserTabBarController.m */; };
 		A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */; };
+		A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D41A141CD5B0840091FF7D /* MathManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		A07064C41CD561FB0022C45C /* UserTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTabBarController.m; sourceTree = "<group>"; };
 		A07064C71CD5694B0022C45C /* CategoryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionCollectionViewController.h; sourceTree = "<group>"; };
 		A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionCollectionViewController.m; sourceTree = "<group>"; };
+		A0D41A131CD5B0840091FF7D /* MathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathManager.h; sourceTree = "<group>"; };
+		A0D41A141CD5B0840091FF7D /* MathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathManager.m; sourceTree = "<group>"; };
 		C1B93BC0272D80B75DA37F1B /* libPods-gold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +181,8 @@
 			children = (
 				774D981C1CD5315A002B4884 /* Constants.h */,
 				774D981D1CD5315A002B4884 /* Constants.m */,
+				A0D41A131CD5B0840091FF7D /* MathManager.h */,
+				A0D41A141CD5B0840091FF7D /* MathManager.m */,
 				A07064B21CD4A0E20022C45C /* Managers */,
 				77A59B8B1CD49297000FE437 /* main.m */,
 			);
@@ -435,12 +440,13 @@
 				A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */,
 				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
 				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
+				A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */,
 				A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */,
 				A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */,
 				A07064BF1CD53BF50022C45C /* ProfileViewController.m in Sources */,
 				A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */,
 				77A9E16A1CD51939006578C1 /* RankSystemManager.m in Sources */,
-				77A9E1711CD527EF006578C1 /* SportingEventsConstants.m in Sources */,
+				77A9E1711CD527EF006578C1 /* (null) in Sources */,
 				A046ED3F1CD574B000B509F6 /* ActivityFeedTableViewController.m in Sources */,
 				774D981E1CD5315A002B4884 /* Constants.m in Sources */,
 				77A59B8F1CD49297000FE437 /* AppDelegate.m in Sources */,
