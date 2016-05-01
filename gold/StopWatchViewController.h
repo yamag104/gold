@@ -11,5 +11,6 @@
 @interface StopWatchViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 
 @end

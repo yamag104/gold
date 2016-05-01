@@ -1,46 +1,33 @@
 //
-//  UserFeedTableViewController.m
+//  ActivityFeedTableViewController.m
 //  gold
 //
 //  Created by Brian Wong on 4/30/16.
 //  Copyright © 2016 lahacks2016. All rights reserved.
 //
 
-#import "UserFeedTableViewController.h"
-#import "RecordTableViewCell.h"
+#import "ActivityFeedTableViewController.h"
+#import "FeedTableViewCell.h"
 
-@interface UserFeedTableViewController ()
+@interface ActivityFeedTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UIView *feedHeaderView;
-@property (weak, nonatomic) IBOutlet UIImageView *userProfileImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *profileBackgroundView;
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
 
 @end
 
-@implementation UserFeedTableViewController
+@implementation ActivityFeedTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableview.delegate = self;
+    self.tableview.dataSource = self;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    //
-    
-    self.profileBackgroundView.image = [UIImage imageNamed:@"Profile Background@1x"];
-    self.profileBackgroundView.backgroundColor = [UIColor clearColor];
-    
-    self.userProfileImageView.layer.cornerRadius = self.userProfileImageView.frame.size.width/2;
-    self.userProfileImageView.layer.borderWidth = 3.0;
-    self.userProfileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.userProfileImageView.clipsToBounds = YES;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationController.title = @"Feed";
     
     
 }
-
 
 #pragma mark - Table view data source
 
@@ -50,21 +37,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return 3;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    FeedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"feedCell" forIndexPath:indexPath];
+
+    cell.profileImageView.layer.cornerRadius = cell.profileImageView.frame.size.width/2;
+    cell.profileImageView.clipsToBounds = YES;
+    cell.profileImageView.backgroundColor = [UIColor redColor];
+    cell.feedTextView.text = @"MY FRIEND RAN THIS MANY MILES AND IS THE STRONGEST MAN IN THE WORLD WOW SO COOL KAWAIIIIIIIII";
     
-    RecordTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recordCell" forIndexPath:indexPath];
-    
-    cell.eventNameLabel.text = @"100m Dash";
-    cell.eventDateLabel.text = @"02/12/14 - 12:30 AM";
-    cell.eventTimeLabel.text = @"0:00.0";
-    
-    // Configure the cell...
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0;
 }
 
 
