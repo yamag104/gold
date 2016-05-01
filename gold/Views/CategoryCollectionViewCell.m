@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _imageView = [[UIImageView alloc] initWithFrame:frame];
+        _imageView = [[UIImageView alloc] init];
         [self.contentView addSubview:_imageView];
     }
     return self;

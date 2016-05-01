@@ -20,14 +20,6 @@ static NSString * const reuseIdentifier = @"categoryCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self getCategories];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,31 +27,21 @@ static NSString * const reuseIdentifier = @"categoryCell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return [self.categories count];
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.categories count];
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CategoryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     NSString *eventname = [self.categories objectAtIndex:indexPath.section];
-    cell.imageView.image=[UIImage imageNamed:eventname];
+    cell.imageView.image = [UIImage imageNamed:eventname];
     cell.imageView.layer.cornerRadius = 5.0;
     cell.imageView.layer.masksToBounds = YES;
     cell.imageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -103,7 +85,7 @@ static NSString * const reuseIdentifier = @"categoryCell";
 - (void)getCategories {
     NSString *path = [NSString stringWithFormat:@"%@%@", kFirebaseURL,kComponentCategories];
     Firebase *categoryRef = [[Firebase alloc] initWithUrl:path];
-    self.categories = [NSMutableArray arrayWithObjects:@"Swimming", @"Cycling", nil];
+    self.categories = [NSMutableArray arrayWithObjects:@"Running", @"Cycling", nil];
     [[categoryRef queryOrderedByValue] observeEventType:FEventTypeChildAdded
                                               withBlock:^(FDataSnapshot *snapshot) {
                                                   NSDictionary *categ = snapshot.value;

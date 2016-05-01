@@ -28,7 +28,6 @@
 		A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A046ED411CD5764500B509F6 /* FeedTableViewCell.m */; };
 		A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064B41CD4A17F0022C45C /* StopWatchViewController.m */; };
 		A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BB1CD53BC30022C45C /* RecordTableViewCell.m */; };
-		A07064BF1CD53BF50022C45C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BE1CD53BF50022C45C /* ProfileViewController.m */; };
 		A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C41CD561FB0022C45C /* UserTabBarController.m */; };
 		A07064C91CD5694B0022C45C /* CategoryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */; };
 		A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D41A141CD5B0840091FF7D /* MathManager.m */; };
@@ -247,14 +246,10 @@
 				A07064B41CD4A17F0022C45C /* StopWatchViewController.m */,
 				77A9E15E1CD4B0BE006578C1 /* LoginViewController.h */,
 				77A9E15F1CD4B0BE006578C1 /* LoginViewController.m */,
-				A07064BD1CD53BF50022C45C /* ProfileViewController.h */,
-				A07064BE1CD53BF50022C45C /* ProfileViewController.m */,
-				A07064C71CD5694B0022C45C /* CategoryCollectionCollectionViewController.h */,
-				A07064C81CD5694B0022C45C /* CategoryCollectionCollectionViewController.m */,
 				A046ED3D1CD574B000B509F6 /* ActivityFeedTableViewController.h */,
 				A046ED3E1CD574B000B509F6 /* ActivityFeedTableViewController.m */,
-				A07064BD1CD53BF50022C45C /* UserFeedTableViewController.h */,
-				A07064BE1CD53BF50022C45C /* UserFeedTableViewController.m */,
+				A07064BD1CD53BF50022C45C /* ProfileViewController.h */,
+				A07064BE1CD53BF50022C45C /* ProfileViewController.m */,
 				7752C1EB1CD5911C00CD7959 /* CategoryCollectionViewController.h */,
 				7752C1EC1CD5911C00CD7959 /* CategoryCollectionViewController.m */,
 			);
@@ -460,8 +455,6 @@
 				A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */,
 				A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */,
 				A07064BC1CD53BC30022C45C /* RecordTableViewCell.m in Sources */,
-				A07064BF1CD53BF50022C45C /* ProfileViewController.m in Sources */,
-				A07064BF1CD53BF50022C45C /* UserFeedTableViewController.m in Sources */,
 				7752C1ED1CD5911C00CD7959 /* CategoryCollectionViewController.m in Sources */,
 				A07064C51CD561FB0022C45C /* UserTabBarController.m in Sources */,
 				7752C1F01CD59A9700CD7959 /* CategoryCollectionViewCell.m in Sources */,
