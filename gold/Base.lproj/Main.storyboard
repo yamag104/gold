@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iRb-e5-8QU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iRb-e5-8QU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -95,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="1770" y="949"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="tbo-BK-sHB">
             <objects>
                 <tableViewController id="f3H-4E-kvM" customClass="ProfileViewController" sceneMemberID="viewController">
@@ -151,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="242" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wc5-Gu-wgO" id="Mbv-tE-yEN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-sq-3iD">
@@ -207,7 +207,9 @@
                             <outlet property="delegate" destination="f3H-4E-kvM" id="rp5-EU-BhJ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="gaZ-8j-rkW"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="User" selectedImage="User" id="gaZ-8j-rkW">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="10" vertical="0.0"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="feedHeaderView" destination="mDx-WQ-hxw" id="jfa-KO-zAi"/>
                         <outlet property="profileBackgroundView" destination="hrG-u8-8e4" id="UFi-DK-i2l"/>
@@ -334,7 +336,7 @@
             </objects>
             <point key="canvasLocation" x="-531" y="1260"/>
         </scene>
-        <!--Item 2-->
+        <!--Events-->
         <scene sceneID="AF6-dB-kRa">
             <objects>
                 <viewController id="awW-mE-ViE" sceneMemberID="viewController">
@@ -347,13 +349,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="jQv-vH-GLR"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="Bike" selectedImage="Bike" id="jQv-vH-GLR">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-20" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1SS-oh-4Qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042" y="1590"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="Gt6-Y1-nlL">
             <objects>
                 <viewController id="7VW-ez-4kc" customClass="ActivityFeedTableViewController" sceneMemberID="viewController">
@@ -438,7 +442,9 @@
                             <constraint firstItem="1fU-IB-ucD" firstAttribute="top" secondItem="tXR-XP-5dr" secondAttribute="bottom" id="tQv-n1-LML"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="rEt-S7-zMZ"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="rEt-S7-zMZ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-10" vertical="0.0"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tableview" destination="1fU-IB-ucD" id="bt9-AN-UyB"/>
                     </connections>
@@ -459,8 +465,8 @@
                     <connections>
                         <segue destination="7VW-ez-4kc" kind="relationship" relationship="viewControllers" id="QrH-y4-Nbb"/>
                         <segue destination="awW-mE-ViE" kind="relationship" relationship="viewControllers" id="v8A-eb-eth"/>
-                        <segue destination="f3H-4E-kvM" kind="relationship" relationship="viewControllers" id="kTa-ma-hHu"/>
                         <segue destination="ZEJ-GY-8HG" kind="relationship" relationship="viewControllers" id="Tue-MB-nYl"/>
+                        <segue destination="f3H-4E-kvM" kind="relationship" relationship="viewControllers" id="kTa-ma-hHu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Iv-kP-Q6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -468,6 +474,7 @@
             <point key="canvasLocation" x="222" y="1260"/>
         </scene>
         <!--CategoryCollectionViewController Scene-->
+        <!--Rank-->
         <scene sceneID="t61-Eb-JqZ">
             <objects>
                 <collectionViewController id="ZEJ-GY-8HG" userLabel="CategoryCollectionViewController Scene" customClass="CategoryCollectionViewController" sceneMemberID="viewController">
@@ -510,11 +517,19 @@
                             <outlet property="delegate" destination="ZEJ-GY-8HG" id="coE-vu-xgx"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="rGt-qm-UpT"/>
+                    <tabBarItem key="tabBarItem" title="Rank" image="Star" selectedImage="Star" id="rGt-qm-UpT">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="20" vertical="0.0"/>
+                    </tabBarItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TI7-aP-23A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-106" y="2092"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bike" width="39" height="23"/>
+        <image name="Home" width="27" height="21"/>
+        <image name="Star" width="28" height="26"/>
+        <image name="User" width="25" height="27"/>
+    </resources>
 </document>
