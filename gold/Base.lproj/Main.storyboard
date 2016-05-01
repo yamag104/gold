@@ -207,7 +207,7 @@
                             <outlet property="delegate" destination="f3H-4E-kvM" id="rp5-EU-BhJ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Profile" image="User" selectedImage="User" id="gaZ-8j-rkW">
+                    <tabBarItem key="tabBarItem" title="Profile" image="User-1" selectedImage="User-1" id="gaZ-8j-rkW">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="10" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -525,6 +525,6 @@
         <image name="Bike" width="39" height="23"/>
         <image name="Home" width="27" height="21"/>
         <image name="Star" width="28" height="26"/>
-        <image name="User" width="25" height="27"/>
+        <image name="User-1" width="25" height="27"/>
     </resources>
 </document>
