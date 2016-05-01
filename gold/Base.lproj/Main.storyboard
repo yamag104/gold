@@ -108,36 +108,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="mDx-WQ-hxw">
-                            <rect key="frame" x="0.0" y="64" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="64" width="600" height="170"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hrG-u8-8e4">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hrG-u8-8e4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="170"/>
                                 </imageView>
-                                <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="t5s-AP-2Bs">
-                                    <rect key="frame" x="280" y="113" width="40" height="37"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="37" id="7Cr-dV-8uP"/>
-                                        <constraint firstAttribute="width" constant="40" id="An7-PX-3Pq"/>
-                                    </constraints>
-                                </pageControl>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EkP-DW-KUy">
-                                    <rect key="frame" x="250" y="8" width="100" height="100"/>
+                                    <rect key="frame" x="250" y="17" width="100" height="100"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="KCM-rV-AZM"/>
                                         <constraint firstAttribute="width" constant="100" id="Xk1-eF-JQc"/>
                                     </constraints>
                                 </imageView>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="t5s-AP-2Bs">
+                                    <rect key="frame" x="280" y="125" width="40" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="37" id="7Cr-dV-8uP"/>
+                                        <constraint firstAttribute="width" constant="40" id="An7-PX-3Pq"/>
+                                    </constraints>
+                                </pageControl>
                             </subviews>
                             <color key="backgroundColor" red="0.97647058819999999" green="0.23137254900000001" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="EkP-DW-KUy" firstAttribute="centerX" secondItem="mDx-WQ-hxw" secondAttribute="centerX" id="5Ki-gP-dVa"/>
-                                <constraint firstAttribute="bottom" secondItem="t5s-AP-2Bs" secondAttribute="bottom" id="7Zd-wI-qMx"/>
+                                <constraint firstAttribute="bottom" secondItem="t5s-AP-2Bs" secondAttribute="bottom" constant="8" id="7Zd-wI-qMx"/>
                                 <constraint firstAttribute="bottom" secondItem="EkP-DW-KUy" secondAttribute="bottom" constant="42" id="9Ee-YW-UQ4"/>
                                 <constraint firstItem="EkP-DW-KUy" firstAttribute="top" secondItem="mDx-WQ-hxw" secondAttribute="top" constant="8" id="OY1-nG-aBz"/>
+                                <constraint firstItem="EkP-DW-KUy" firstAttribute="centerX" secondItem="mDx-WQ-hxw" secondAttribute="centerX" id="bnM-Lu-Ke8"/>
+                                <constraint firstAttribute="trailing" secondItem="EkP-DW-KUy" secondAttribute="trailing" constant="250" id="jRd-55-dnc"/>
+                                <constraint firstItem="EkP-DW-KUy" firstAttribute="top" secondItem="mDx-WQ-hxw" secondAttribute="top" constant="17" id="k9O-QR-mhB"/>
                                 <constraint firstItem="t5s-AP-2Bs" firstAttribute="centerX" secondItem="mDx-WQ-hxw" secondAttribute="centerX" id="mNu-eM-Afe"/>
                                 <constraint firstItem="EkP-DW-KUy" firstAttribute="top" secondItem="mDx-WQ-hxw" secondAttribute="top" constant="8" id="maK-3b-Xrd"/>
                                 <constraint firstItem="hrG-u8-8e4" firstAttribute="leading" secondItem="mDx-WQ-hxw" secondAttribute="leading" id="nqx-XR-zzw"/>
+                                <constraint firstItem="EkP-DW-KUy" firstAttribute="leading" secondItem="mDx-WQ-hxw" secondAttribute="leading" constant="250" id="peC-wH-6P9"/>
                                 <constraint firstAttribute="bottom" secondItem="hrG-u8-8e4" secondAttribute="bottom" id="sK6-tJ-MEA"/>
                                 <constraint firstItem="hrG-u8-8e4" firstAttribute="top" secondItem="mDx-WQ-hxw" secondAttribute="top" id="sPp-0c-TFV"/>
                                 <constraint firstAttribute="trailing" secondItem="hrG-u8-8e4" secondAttribute="trailing" id="ucX-DP-32d"/>
@@ -145,14 +149,19 @@
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
+                                    <exclude reference="5Ki-gP-dVa"/>
                                     <exclude reference="9Ee-YW-UQ4"/>
                                     <exclude reference="OY1-nG-aBz"/>
+                                    <exclude reference="jRd-55-dnc"/>
+                                    <exclude reference="maK-3b-Xrd"/>
+                                    <exclude reference="peC-wH-6P9"/>
+                                    <exclude reference="vYo-01-OB9"/>
                                 </mask>
                             </variation>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recordCell" rowHeight="100" id="Wc5-Gu-wgO" customClass="RecordTableViewCell">
-                                <rect key="frame" x="0.0" y="192" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="262" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wc5-Gu-wgO" id="Mbv-tE-yEN">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
@@ -215,8 +224,6 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="10" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="feedHeaderView" destination="mDx-WQ-hxw" id="jfa-KO-zAi"/>
-                        <outlet property="profileBackgroundView" destination="hrG-u8-8e4" id="UFi-DK-i2l"/>
                         <outlet property="userProfileImageView" destination="EkP-DW-KUy" id="JXd-hZ-6oT"/>
                     </connections>
                 </tableViewController>
@@ -585,5 +592,6 @@
         <image name="NavigationBarImage" width="375" height="67"/>
         <image name="Star" width="28" height="26"/>
         <image name="User-1" width="25" height="27"/>
+        <image name="background" width="375" height="255"/>
     </resources>
 </document>

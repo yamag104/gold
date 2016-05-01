@@ -10,6 +10,7 @@
 		01064F6FEB8100B8906946CE /* libPods-gold.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B93BC0272D80B75DA37F1B /* libPods-gold.a */; };
 		77257BBD1CD5D10C0014414E /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77257BBC1CD5D10C0014414E /* ChallengeTableViewController.m */; };
 		77257BC01CD5D1C20014414E /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77257BBF1CD5D1C20014414E /* DataSource.m */; };
+		77257BC11CD5ED040014414E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07064BE1CD53BF50022C45C /* ProfileViewController.m */; };
 		774D981E1CD5315A002B4884 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D981D1CD5315A002B4884 /* Constants.m */; };
 		7752C1E71CD53F0B00CD7959 /* gold-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 774D0ECF1CD53B8700D055A1 /* gold-Prefix.pch */; };
 		7752C1EA1CD573C500CD7959 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7752C1E91CD573C500CD7959 /* FirebaseManager.m */; };
@@ -459,6 +460,7 @@
 				7752C1EA1CD573C500CD7959 /* FirebaseManager.m in Sources */,
 				A07064B51CD4A17F0022C45C /* StopWatchViewController.m in Sources */,
 				77257BBD1CD5D10C0014414E /* ChallengeTableViewController.m in Sources */,
+				77257BC11CD5ED040014414E /* ProfileViewController.m in Sources */,
 				77A9E16D1CD522FA006578C1 /* Athelete.m in Sources */,
 				A0D41A151CD5B0840091FF7D /* MathManager.m in Sources */,
 				A046ED421CD5764500B509F6 /* FeedTableViewCell.m in Sources */,

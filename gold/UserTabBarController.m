@@ -22,6 +22,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationItem.hidesBackButton = YES;
+    self.navigationController.title = @"Ludus";
     
     self.raisedTabButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.raisedTabButton.frame = CGRectMake(0, 0, 50, 50);

@@ -30,14 +30,20 @@
     
     //
     
-    self.profileBackgroundView.image = [UIImage imageNamed:@"Profile Background@1x"];
+    self.profileBackgroundView.image = [UIImage imageNamed:@"profile_background"];
     self.profileBackgroundView.backgroundColor = [UIColor clearColor];
     
     self.userProfileImageView.layer.cornerRadius = self.userProfileImageView.frame.size.width/2;
     self.userProfileImageView.layer.borderWidth = 3.0;
     self.userProfileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.userProfileImageView.clipsToBounds = YES;
-    
+    self.userProfileImageView.image = [UIImage imageNamed:@"profile_image"];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(chooseImage)];
+    [self.userProfileImageView addGestureRecognizer:tap];
+    [self.userProfileImageView setUserInteractionEnabled:YES];
+}
+
+- (void)chooseImage {
     
 }
 
