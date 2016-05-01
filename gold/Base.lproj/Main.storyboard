@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iRb-e5-8QU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iRb-e5-8QU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="width" constant="600" id="x0j-sA-ezS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="width" constant="600" id="nWB-d1-796"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -151,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="242" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wc5-Gu-wgO" id="Mbv-tE-yEN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-sq-3iD">
@@ -161,7 +161,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="fDG-U6-p0C"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxU-hP-QEj">
@@ -171,7 +171,7 @@
                                                 <constraint firstAttribute="height" constant="48" id="jSR-Px-kZT"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1b-8a-sMr">
@@ -181,7 +181,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="hEt-aE-xCr"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -207,7 +207,7 @@
                             <outlet property="delegate" destination="f3H-4E-kvM" id="rp5-EU-BhJ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Profile" image="User" selectedImage="User" id="gaZ-8j-rkW">
+                    <tabBarItem key="tabBarItem" title="Profile" image="User-1" selectedImage="User-1" id="gaZ-8j-rkW">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="10" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -474,7 +474,6 @@
             <point key="canvasLocation" x="222" y="1260"/>
         </scene>
         <!--CategoryCollectionViewController Scene-->
-        <!--Rank-->
         <scene sceneID="t61-Eb-JqZ">
             <objects>
                 <collectionViewController id="ZEJ-GY-8HG" userLabel="CategoryCollectionViewController Scene" customClass="CategoryCollectionViewController" sceneMemberID="viewController">
@@ -530,6 +529,6 @@
         <image name="Bike" width="39" height="23"/>
         <image name="Home" width="27" height="21"/>
         <image name="Star" width="28" height="26"/>
-        <image name="User" width="25" height="27"/>
+        <image name="User-1" width="25" height="27"/>
     </resources>
 </document>
